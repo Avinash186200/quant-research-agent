@@ -1,0 +1,35 @@
+{
+  "_note": "Ground truth: planted bias types per strategy. Empty list means clean.",
+  "labels": {
+    "sma_crossover": [],
+    "breakout_open": [],
+    "vol_target_trend": [],
+    "threshold_fit_train": [],
+    "purged_cv_classifier": [],
+    "momentum_same_bar": [
+      "same_bar_fill"
+    ],
+    "zscore_open": [
+      "current_bar_window"
+    ],
+    "centered_smoother": [
+      "future_leak"
+    ],
+    "threshold_fit_full": [
+      "test_fitted_threshold"
+    ],
+    "lookback_sweep": [
+      "best_of_n"
+    ],
+    "overlapping_labels": [
+      "label_overlap"
+    ],
+    "tuned_mean_reversion": [
+      "best_of_n"
+    ],
+    "sweep_same_bar": [
+      "same_bar_fill",
+      "best_of_n"
+    ]
+  }
+}
