@@ -1,12 +1,12 @@
 # Quant Research Agent
 
+[![CI](https://github.com/Avinash186200/quant-research-agent/actions/workflows/ci.yml/badge.svg)](https://github.com/Avinash186200/quant-research-agent/actions/workflows/ci.yml) ![Python](https://img.shields.io/badge/python-3.11-blue) [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+
 An agent that audits trading strategies for **look-ahead bias** and **selection bias**.
 
 You hand it a strategy file. It runs deterministic checks (perturb future bars, compare same-bar and next-bar fills, perturb only the test period and see if fitted parameters move, deflate the Sharpe for the number of trials, run the strategy on a pure random walk) and returns a structured audit report: a verdict, and each finding with its bias type, the evidence behind it, and a fix.
 
 I built this because the bugs that make a backtest look great are almost always the same handful, and they are cheap to test for mechanically. What is not cheap is reading the code and deciding which test matters. So the tools do the maths, and Claude does the reading and the judgement.
-
-[![CI](../../actions/workflows/ci.yml/badge.svg)](../../actions/workflows/ci.yml)
 
 ## At a glance
 
@@ -101,3 +101,5 @@ tests/                 tools, eval, MCP server and agent loop (mocked client)
 ## License
 
 MIT
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) and the [CHANGELOG](CHANGELOG.md).
